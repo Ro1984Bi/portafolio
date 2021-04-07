@@ -1,0 +1,31 @@
+/*
+  Color del Loading
+*/
+svg path,
+svg rect{
+  fill: black;
+}
+.animated {
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+  }
+@media (prefers-reduced-motion) {
+    .animated {
+      animation: unset !important;
+      transition: none !important;
+    }
+  }
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+
+to {
+    opacity: 1;
+}
+}
+.fadeIn {
+animation-name: fadeIn;
+}
+
+/*# sourceMappingURL=styles.css.map*/
